@@ -10,7 +10,24 @@ This is a link to my presentation:
 ## Overview
 The purpose of my portfolio website is to ...
 Here are some of the funtionalities/features found on my website:
-1. Mobile view
+1. Header
+The header helps you navigate the page and has the details for the website. Below is the a preview of the header
+```html
+ <header>
+        <div class="logo-name">
+            <a href="./index.html">
+                <img src="./images/mplogo.png" alt="Website Logo" id="logo">
+            </a> 
+            <h1 class="name">MEIKA PONNAN</h1>
+        </div>
+        <nav class="nav-items">
+            <a href="./pages/about.html">About</a>
+            <a href="./pages/portfolio.html">Portfolio</a>
+            <a href="./pages/blogs.html">Blogs</a>
+            <a href="./pages/contact.html">Contact Me</a>
+        </nav>
+    </header>
+```
 2.
 3.
 4.

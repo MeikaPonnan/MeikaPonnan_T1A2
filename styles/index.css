@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background-color: #8CACAA;
+}
+
+header {
+  background-color: #292A30;
+  padding: 20px;
+}
+header .logo-name {
+  margin-bottom: 20px;
+}
+header .logo-name .name {
+  font-size: 30px;
+  color: #889d6c;
+  display: flex;
+  justify-content: flex-end;
+}
+header .nav-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+header .nav-items a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+#logo {
+  width: 70px;
+}/*# sourceMappingURL=index.css.map */
