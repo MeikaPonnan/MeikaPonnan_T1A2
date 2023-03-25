@@ -10,7 +10,7 @@ This is a link to my presentation:
 ## Overview
 The purpose of my portfolio website is to ...
 Here are some of the funtionalities/features found on my website:
-1. Header
+### 1. Header
 The header helps you navigate the page and has the details for the website. Below is the a preview of the header
 ```html
  <header>
@@ -28,10 +28,20 @@ The header helps you navigate the page and has the details for the website. Belo
         </nav>
     </header>
 ```
-2.
-3.
-4.
-5.
+### 2. Footer
+The Footer contains links to my social media where you get to know me and see my work.
+```
+<footer>
+        <div class="social-media">
+            <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="" ><i class="fa-brands fa-linkedin"></i></a>
+            <a href="" ><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+```
+### 3.
+### 4.
+### 5.
 
 This is the sitemap i created:
 

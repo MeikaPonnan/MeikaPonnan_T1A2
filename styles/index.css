@@ -1,6 +1,10 @@
 body {
   margin: 0;
-  background-color: #8CACAA;
+  background-color: rgb(40, 43, 46);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
@@ -30,4 +34,17 @@ header .nav-items a {
 
 #logo {
   width: 70px;
+}
+
+footer {
+  background-color: #292A30;
+  padding: 16px;
+  text-align: center;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+}
+footer .social-media a i {
+  color: rgb(121, 153, 112);
 }/*# sourceMappingURL=index.css.map */
