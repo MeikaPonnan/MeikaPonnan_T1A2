@@ -1,0 +1,46 @@
+@import "../defaults/color";
+@import "./utils";
+@import "../defaults/breakpoint";
+
+footer {
+
+    background-color: $primary-background;
+    padding: 16px;
+    text-align: center;
+    
+    
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+      
+
+        margin-bottom: 20px;
+        
+        a {
+            i {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $medium) {
+    footer {
+        .social-media {
+            width: 15%;
+            margin-left: auto;
+            
+        }
+    }
+    .newsletter form {
+        max-width: 100%;
+        position: relative;
+        padding: 10px;
+
+    }
+
+        
+
+    
+}
+

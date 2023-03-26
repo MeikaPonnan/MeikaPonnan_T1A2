@@ -1,0 +1,74 @@
+@import "../defaults/color";
+@import "./utils";
+@import "../defaults/breakpoint";
+
+header {
+
+    background-color: $primary-background;
+    padding: 20px;
+
+        .logo-name {
+            @media screen and (max-width:600px) {
+                margin-bottom: 20px;
+
+            }
+
+            #logo {
+                width: 70px;
+                color: $primary-color;
+            } 
+
+            .name {
+                font-size: 30px;
+                color: $primary-color;
+                padding: 10px;
+                text-decoration: none;
+                display: flex;
+                justify-content: flex-end;
+            } 
+        }
+
+    .nav-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+        font-size: 20px;
+
+        a {
+            text-decoration: none;
+            color: $secondary-color;
+            
+        }
+    }
+}
+
+@media screen and (min-width: $medium) {
+    header {
+           display: flex;
+           align-items: flex-end;
+           justify-content: space-between;
+          
+
+            #logo:hover {
+                transform: scale(1.2);
+                color:aquamarine;
+
+            }
+   
+                .name {
+                   margin-bottom: 10px;
+                   text-decoration: none;
+                   transition: transform .4s;
+                }
+            .name:hover {
+                transform: scale(1.2);
+                color: $secondary-color;
+            }
+        }
+   
+       .nav-items {
+               width: 50%;
+          }
+   
+    }   
+}

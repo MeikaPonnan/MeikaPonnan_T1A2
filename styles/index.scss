@@ -1,9 +1,12 @@
 
+@import "./defaults/color";
+@import "./components/header";
+@import "./components/footer";
 
 
 body {
     margin: 0;
-    background-color: rgb(40, 43, 46);
+    background-color: $primary-background;
     min-height: 100vh;
 
     display: flex;
@@ -11,62 +14,20 @@ body {
     justify-content: space-between;
 }
 
-header {
-    background-color: #292A30;
-    padding: 20px;
-    
-    .logo-name {
-        margin-bottom: 20px;
+.content {
+    position: absolute;
+    top: 35%;
+    left: 8%;
 
-        .name {
-            font-size: 30px;
-            color: #889d6c;
-            display: flex;
-            justify-content: flex-end;
-
-        }
+    h4 {
+        color: rgb(174, 201, 192);
+        font-size: 25px;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
     }
-
-    .nav-items {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: space-evenly;
-        font-size: 20px;
-
-        a {
-            text-decoration: none;
-            color: whitesmoke;
-            
-        }
-
+    h1 {
+        color: $secondary-color;
+        margin: 20px 0px 20px;
+        font-size: 55px;
     }
-}
-
-#logo {
-    width: 70px;
-
-}
-
-footer {
-    background-color: #292A30;
-    padding: 16px;
-    text-align: center;
-    
-    
-    .social-media {
-        display: flex;
-        justify-content: space-around;
-        
-        a {
-            i {
-                color: rgb(121, 153, 112);
-            }
-        }
-
-
-    }
-   
-    
-
 }

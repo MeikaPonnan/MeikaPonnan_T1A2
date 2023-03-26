@@ -22,7 +22,7 @@ The header helps you navigate the page and has the details for the website. Belo
         </div>
         <nav class="nav-items">
             <a href="./pages/about.html">About</a>
-            <a href="./pages/portfolio.html">Portfolio</a>
+            <a href="./pages/services.html">Services</a>
             <a href="./pages/blogs.html">Blogs</a>
             <a href="./pages/contact.html">Contact Me</a>
         </nav>
