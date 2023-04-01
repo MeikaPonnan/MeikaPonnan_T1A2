@@ -5,24 +5,28 @@
 header {
 
     background-color: $primary-background;
-    padding: 20px;
+    padding: 30px;
 
         .logo-name {
             @media screen and (max-width:600px) {
                 margin-bottom: 20px;
+               
+              
 
             }
 
             #logo {
-                width: 70px;
+                width: 80px;
                 color: $primary-color;
             } 
 
             .name {
-                font-size: 30px;
+                font-size: 35px;
                 color: $primary-color;
-                padding: 10px;
+                padding: 30px;
                 text-decoration: none;
+                font-family: fantasy;
+                font-weight: bold;
                 display: flex;
                 justify-content: flex-end;
             } 
@@ -44,31 +48,50 @@ header {
 
 @media screen and (min-width: $medium) {
     header {
-           display: flex;
-           align-items: flex-end;
-           justify-content: space-between;
-          
-
-            #logo:hover {
-                transform: scale(1.2);
-                color:aquamarine;
-
-            }
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
    
-                .name {
-                   margin-bottom: 10px;
-                   text-decoration: none;
-                   transition: transform .4s;
-                }
-            .name:hover {
-                transform: scale(1.2);
-                color: $secondary-color;
-            }
+
+
+        .logo-name {
+            width: 500px;
+            margin-top: 30px;
+            margin-left: 50px;
+            margin-right: 40px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            
+    
+
+        }
+        
+    
+        #logo:hover {
+            transform: scale(1.5);
+           
+        }
+   
+        .name {
+            text-decoration: none;
+            transition: transform .4s;
+            font-style: italic; 
+           
+        }
+
+        .name:hover {
+            transform: scale(1.2);
+            color: $secondary-color;
         }
    
        .nav-items {
-               width: 50%;
-          }
-   
-    }   
-}
+               width: 500px;
+               
+           
+               
+        
+               
+        }
+       
+    }      
+}   

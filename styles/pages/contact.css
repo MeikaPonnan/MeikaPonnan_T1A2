@@ -113,7 +113,62 @@ body {
   font-size: 55px;
 }
 
-main section .backgroundimg img {
-  height: 300px;
-  width: 100%;
-}/*# sourceMappingURL=home.css.map */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h2 {
+  color: #889d6c;
+}
+main form {
+  margin-bottom: 20px;
+}
+main form .form-elements {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+main form .form-elements label {
+  font-size: 24px;
+}
+main form .form-elements .form-input {
+  border: 2px solid rgb(120, 109, 154);
+  border-radius: 6px;
+  font-size: 24px;
+  outline: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main form .form-elements .form-input.form-message {
+  resize: none;
+}
+main form .form-elements .form-input:focus {
+  box-shadow: 0 0 6px 3px #889d6c;
+}
+main form .button-form #submit {
+  height: 30px;
+  min-width: 80px;
+  background-color: #889d6c;
+  color: whitesmoke;
+  border-radius: 25px;
+  border: whitesmoke;
+  outline: whitesmoke;
+}
+main form .button-form #submit:hover {
+  cursor: pointer;
+  background-color: #61714d;
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 600px) {
+  main form .form-elements {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main form .form-elements .form-input {
+    width: 400px;
+  }
+  main .button-form {
+    margin: 10px 100px;
+  }
+}/*# sourceMappingURL=contact.css.map */

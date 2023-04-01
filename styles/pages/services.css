@@ -1,3 +1,118 @@
+header {
+  background-color: #292A30;
+  padding: 30px;
+}
+@media screen and (max-width: 600px) {
+  header .logo-name {
+    margin-bottom: 20px;
+  }
+}
+header .logo-name #logo {
+  width: 80px;
+  color: #889d6c;
+}
+header .logo-name .name {
+  font-size: 35px;
+  color: #889d6c;
+  padding: 30px;
+  text-decoration: none;
+  font-family: fantasy;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+}
+header .nav-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 20px;
+}
+header .nav-items a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  header .logo-name {
+    width: 500px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  header #logo:hover {
+    transform: scale(1.5);
+  }
+  header .name {
+    text-decoration: none;
+    transition: transform 0.4s;
+    font-style: italic;
+  }
+  header .name:hover {
+    transform: scale(1.2);
+    color: whitesmoke;
+  }
+  header .nav-items {
+    width: 500px;
+  }
+}
+footer {
+  background-color: #292A30;
+  padding: 16px;
+  text-align: center;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+footer .social-media a i {
+  color: #889d6c;
+}
+
+@media screen and (min-width: 600px) {
+  footer .social-media {
+    width: 15%;
+    margin-left: auto;
+  }
+  .newsletter form {
+    max-width: 100%;
+    position: relative;
+    padding: 10px;
+  }
+}
+body {
+  margin: 0;
+  background-color: #292A30;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+.content h4 {
+  color: rgb(174, 201, 192);
+  font-size: 25px;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+.content h1 {
+  color: whitesmoke;
+  margin: 20px 0px 20px;
+  font-size: 55px;
+}
+
 main {
   display: flex;
   justify-content: center;
