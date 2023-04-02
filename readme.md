@@ -2,8 +2,10 @@
 
 ## Links
 Please find the link to my website below:
+https://meikaponnancoderportfolio.netlify.app/
 
 This is a link to my GiHub Repo:
+https://github.com/MeikaPonnan/MeikaPonnan_T1A2
 
 This is a link to my presentation:
 
