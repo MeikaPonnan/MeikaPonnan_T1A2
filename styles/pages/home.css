@@ -60,12 +60,14 @@ header .nav-items a {
   }
   header .nav-items {
     width: 500px;
+    position: absolute;
   }
 }
 footer {
   background-color: #292A30;
   padding: 16px;
   text-align: center;
+  color: whitesmoke;
 }
 footer .social-media {
   display: flex;
@@ -87,30 +89,32 @@ footer .social-media a i {
     padding: 10px;
   }
 }
+/* import is used to bring over any styling that has previously been saved under another file or folder*/
+/* A selector is used to choose which part of the elements needs styling (eg. body, h1, a) */
 body {
-  margin: 0;
-  background-color: #292A30;
-  min-height: 100vh;
-  display: flex;
+  margin: 0; /* margin is the space around the element */
+  background-color: #292A30; /* used to choose the background color of the body */
+  min-height: 100vh; /* selects the minimum height for the body */
+  display: flex; /* flexbox is a way to display content in a layout of your choosing*/
   flex-direction: column;
   justify-content: space-between;
 }
-
-.content {
-  position: absolute;
-  top: 35%;
-  left: 8%;
+body .content {
+  text-align: center; /* text-align can be used to choose where the text is displayed*/
+  margin: 10px;
+  padding: 10px; /* padding is the space between the element */
+  color: rgb(192, 196, 190); /* to choose the color of the text */
 }
-.content h4 {
-  color: rgb(174, 201, 192);
-  font-size: 25px;
-  margin-bottom: 50px;
-  letter-spacing: 2px;
-}
-.content h1 {
+body .content h1 {
   color: whitesmoke;
-  margin: 20px 0px 20px;
-  font-size: 55px;
+  font-size: 40px; /* to choose the size of the text */
+}
+body .content a {
+  text-decoration: none; /* 'a' has an underline that's automatically applied to it. By adding text-decoration to none, it removes the underline */
+  color: #889d6c;
+}
+body .content a:hover { /* when you hover over the link the color changes */
+  color: whitesmoke;
 }
 
 main section .backgroundimg img {

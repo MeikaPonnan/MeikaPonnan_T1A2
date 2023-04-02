@@ -8,8 +8,16 @@ This is a link to my GiHub Repo:
 This is a link to my presentation:
 
 ## Overview
-The purpose of my portfolio website is to ...
+The purpose of my portfolio website is to showcase my ability with html and css, as well as my personaliy and creativity.
+
 Here are some of the funtionalities/features found on my website:
+
+There is a navigation bar that helps navigate the different pages of the website. It includes the About page, Services page, Blogs Page and Contact page. It also has the home page via the logo icon.
+
+### About Page:
+
+The About page has a brief summary on me and also includes a pdf of my resume. It uses the grid display property.
+
 ### 1. Header
 The header helps you navigate the page and has the details for the website. Below is the a preview of the header
 ```html

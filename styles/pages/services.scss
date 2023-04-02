@@ -9,6 +9,7 @@ main {
 
     article {
         border: 2px solid $border-color;
+        color: $secondary-color;
         border-radius: 10px;
         overflow: hidden;
         margin: 30px 50px;
@@ -19,20 +20,39 @@ main {
 
 
         section {
-            .services-img{
+            .services1-img{
                 width: 100%;
                 border-radius: 10px;
+            }
 
+            .services2-img{
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            .services3-img{
+                width: 100%;
+                border-radius: 10px;
             }
         }
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $medium) {
     main {
         display: flex;
-        justify-content: space-around;
         flex-direction: row;
+
+        article {
+
+            &:hover {
+                transform: scale(1.2);
+                color: $tertiary-color;
+            }
+        }
+        
+    
+     
     }
     
 }

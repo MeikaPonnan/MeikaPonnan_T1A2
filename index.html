@@ -1,12 +1,18 @@
 <!DOCTYPE html>
+<!-- Doctype html is used to identify which document if being used. -->
 <html lang="en">
 
+<!-- The head element contains all the information about the page -->
 <head>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The title element is used to add a name for the browser tab -->
     <title>Meika Ponnan</title>
+    <!-- The link below is used to add a favico to the browser tab -->
+    <link rel="icon" type="image/x-icon" href="./images/mplogo.png">
     <!-- The link below is used to link html to css -->
     <link rel="stylesheet" href="./styles/index.css"/>
     <!-- The link below is used to link the home page -->
@@ -16,22 +22,21 @@
 
 </head>
 
+<!-- The body element is used to contain everything that is visible on the page -->
 <body>
-
+<!-- header is to separate the head from the body -->
     <header>
+        <!-- nav is a navigation element that links to other pages or  -->
         <nav>
+            <!-- div is used to divide the contents of the page -->
         <div class="logo-name">
+                <!-- a is used to add a link to the document. It has an attribute of href which defines the link destination  -->
             <a href="./index.html">
+                    <!-- img is used to add an image to the page. img can have atrributes like src which locates the source of the image and alt which is an alternative text if image can't be loaded on the page -->
                 <img src="./images/mplogo.png" alt="Website Logo" id="logo">
             </a> 
-            <a href="./pages/about.html" target="_blank" class="name">MEIKA PONNAN</a>
-            <!-- <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Blogs</a></li>
-                <li><a href="">Contact Me</a></li>
-            </ul> -->
+            <a href="./pages/about.html" class="name">MEIKA PONNAN</a>
+        
         </div>
         </nav>
 
@@ -43,25 +48,31 @@
             <a href="./pages/contact.html">Contact Me</a>
         </nav>
     </header>
-
+<!-- main is used for the middle section of the page -->
     <main>
+        <!-- section is a semantic element to group related elements together-->
         <section>
             <div class="content">
-            <h4><strong>Hello, </strong>my name is</h4>
-                <h1><span>Meika!</span></h1>
-                <h4>I'm an aspiring web developper.</h4>
+                <p><b>Hello</b>, my name is</p><h1>Meika!</h1>
+                <p>I design and build apps and websites with great user experience. Feel free to <a href="../pages/contact.html">contact</a> 
+                    me for any questions and check out my <a href="../pages/about.html">about</a> page to get access to my resume</p>
+                <p class="image"><img src="./images/homeimg.png" width="300px" alt="Photo"></p>
             </div>
         </section>
     </main>
+    <!-- footer is used to separate the bottom part of the page -->
     <footer>
+        <!-- h4 is the fourth biggest heading style -->
         <h4>Connect With Me</h4>
         <div class="newsletter">
+            <!-- the form element is used to collect user input -->
             <form>
                 <input type="email" name="email" id="email" placeholder="Enter your Email">
                 <input type="submit" name="Submit" value="Submit">
             </form>
         </div>
         <div class="social-media">
+            <!-- By setting the target to _blank, the link opens in a separate page. -->
             <a href="https://github.com/MeikaPonnan" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/meikaponnan/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>

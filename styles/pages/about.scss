@@ -2,37 +2,61 @@
 @import "../defaults/breakpoint";
 @import "../index";
 
-
-@media screen and (min-width: $medium) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr 5fr 1fr ;
-        grid-template-rows: 50px 20px 1fr;
+main{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 100px 50px 1fr;
         
         
-        .heading {
-            background-color: $primary-background;
-            color: $secondary-color;
-            grid-column: 1 / -1;
-            grid-row: 1 / 3;
-            text-align: center;
+    .heading {
+        background-color: $primary-background;
+        color: $secondary-color;
+        padding-bottom: 20px;
+        grid-column: 1 / -1;
+        grid-row: 1 / 3;
+        text-align: center;
            
+    }
+
+    .description {
+        height: 70vh;
+        border: 2px solid $border-color;
+        background-color: $secondary-background;
+        color: $secondary-color;
+        padding: 20px;
+        margin: 10px;
+        grid-column: 2 / 3;
+        grid-row: 2 / -1;
+
+        #download {
+        background-color: $primary-color;
+        color: $secondary-color;
+        text-decoration: none;
+
+
+
         }
-
-        .description {
-            height: 40vh;
-            border: 5px solid $primary-color;
-            background-color: $secondary-color;
-            padding: 20px;
-            margin-top: 50px;
-            grid-column: 2 / 3;
-            grid-row: 2 / -1;
-        }
-
-
     }
 
 
 }
-    
 
+@media screen and (min-width: $medium) {
+    main {
+        font-size: 25px;
+
+
+        #download {
+            background-color: $primary-color;
+            color: $secondary-color;
+            text-decoration: none;
+    
+            &:hover {
+                transform: scale(1.1);
+                color:$primary-background;
+            }
+        }
+
+    }
+
+}

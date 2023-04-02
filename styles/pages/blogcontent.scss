@@ -1,0 +1,104 @@
+@import "../defaults/color";
+@import "../defaults/breakpoint";
+@import "../index";
+
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+  
+
+    article {
+        color: $tertiary-color;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+
+
+
+        h1 {
+            color: $primary-color;
+            font-size: 50px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h3 {
+            color: $secondary-color;
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+            padding: 20px;
+            margin: 20px;
+            
+        }
+       
+      
+   
+
+
+        #blogcontent1 {
+            .blog1-img{
+                width: 75%;
+                border-radius: 10px;
+            }
+        }
+
+        #blogcontent2 {
+            .blog2-img{
+                width: 75%;
+                border-radius: 10px;
+            }
+        }
+
+        #blogcontent3 {
+
+            .blog3-img{
+                width: 75%;
+                border-radius: 10px;
+            }
+        }
+        #blogcontent4 {
+
+            .blog4-img{
+                width: 75%;
+                border-radius: 10px;
+            }
+        }
+
+        #blogcontent5 {
+
+        
+            .blog5-img{
+
+                width: 75%;
+                border-radius: 10px;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: $medium) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 1fr;
+        
+
+    
+        
+        article {
+
+        
+            
+        }
+    
+     
+    }
+}
+    
