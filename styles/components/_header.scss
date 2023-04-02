@@ -9,7 +9,7 @@ header {
 
         .logo-name {
             @media screen and (max-width:600px) {
-                margin-bottom: 20px;
+                margin-bottom: 10px;
                
               
 
@@ -23,7 +23,7 @@ header {
             .name {
                 font-size: 35px;
                 color: $primary-color;
-                padding: 30px;
+                padding: 20px;
                 text-decoration: none;
                 font-family: fantasy;
                 font-weight: bold;
@@ -48,21 +48,12 @@ header {
 
 @media screen and (min-width: $medium) {
     header {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-   
-
 
         .logo-name {
             width: 500px;
-            margin-top: 30px;
+            margin-top: 0px;
             margin-left: 50px;
             margin-right: 40px;
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            
-    
 
         }
         
@@ -85,13 +76,8 @@ header {
         }
    
        .nav-items {
-               width: 500px;
-               position: absolute;
-               
-           
-               
-        
-               
+            width: 500px;
+            position: absolute;
         }
        
     }      

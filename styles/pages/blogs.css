@@ -4,7 +4,7 @@ header {
 }
 @media screen and (max-width: 600px) {
   header .logo-name {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 header .logo-name #logo {
@@ -14,7 +14,7 @@ header .logo-name #logo {
 header .logo-name .name {
   font-size: 35px;
   color: #889d6c;
-  padding: 30px;
+  padding: 20px;
   text-decoration: none;
   font-family: fantasy;
   font-weight: bold;
@@ -33,18 +33,11 @@ header .nav-items a {
 }
 
 @media screen and (min-width: 600px) {
-  header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-  }
   header .logo-name {
     width: 500px;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-left: 50px;
     margin-right: 40px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
   }
   header #logo:hover {
     transform: scale(1.5);
