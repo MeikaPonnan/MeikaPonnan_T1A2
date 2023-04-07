@@ -8,27 +8,24 @@ header {
     padding: 30px;
 
         .logo-name {
-            @media screen and (max-width:600px) {
-                margin-bottom: 10px;
+            margin-bottom: 10px;
                
               
 
-            }
-
             #logo {
                 width: 80px;
-                color: $primary-color;
             } 
 
             .name {
-                font-size: 35px;
+                font-size: 2rem;
                 color: $primary-color;
-                padding: 20px;
+                padding: 10px;
+                margin: 20px;
                 text-decoration: none;
                 font-family: fantasy;
                 font-weight: bold;
-                display: flex;
-                justify-content: flex-end;
+                position: relative;
+                
             } 
         }
 
@@ -37,6 +34,8 @@ header {
         flex-wrap: wrap;
         justify-content: space-between; 
         font-size: 20px;
+        position: relative;
+        
 
         a {
             text-decoration: none;
@@ -48,37 +47,73 @@ header {
 
 @media screen and (min-width: $medium) {
     header {
+        
 
         .logo-name {
-            width: 500px;
             margin-top: 0px;
-            margin-left: 50px;
-            margin-right: 40px;
+
+           
 
         }
         
     
         #logo:hover {
-            transform: scale(1.5);
-           
+            transform: rotate(10deg);
+           /* make the logo rotate 10 degrees*/
         }
    
         .name {
+            font-size: 600%;
             text-decoration: none;
-            transition: transform .4s;
             font-style: italic; 
            
         }
 
         .name:hover {
-            transform: scale(1.2);
             color: $secondary-color;
         }
    
        .nav-items {
-            width: 500px;
-            position: absolute;
+            width: 70%;
+            position: relative;
+
+            #about:hover {
+                transform: rotate(5deg);
+                color: $tertiary-color;
+                text-decoration-line: overline;
+            
+            }
+            #services:hover {
+                transform: rotate(-5deg);
+                color: $tertiary-color;
+                text-decoration-line: underline;
+
+            }
+            #blogs:hover{
+                transform: rotate(5deg);
+                color: $tertiary-color;
+                text-decoration-line: overline;
+            }
+
+            #contactme:hover {
+                transform: rotate(-5deg);
+                color: $tertiary-color;
+                text-decoration-line: underline;
+            }
         }
        
     }      
 }   
+
+@media screen and (min-width: $large) {
+
+    header {
+
+        .nav-items {
+            width: 50%;
+            
+
+        }
+    }
+    
+}

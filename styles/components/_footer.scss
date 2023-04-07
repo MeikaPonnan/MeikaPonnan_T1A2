@@ -9,10 +9,36 @@ footer {
     text-align: center;
     color: $secondary-color;
     
-    
+    .newsletter {
+
+        padding: 20px;
+        margin: 10px;
+
+        #email {
+            border: 2px solid greenyellow;
+            border-radius: 5px;
+
+            &:focus {
+                outline: none;
+                border: 4px solid greenyellow;
+            }
+        }
+        #submit {
+            color: $secondary-color;
+            background-color: $secondary-background;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: greenyellow;
+                color: $primary-background;
+            }
+        }
+
+    }
     .social-media {
         display: flex;
         justify-content: space-around;
+        padding: 20px;
       
 
         margin-bottom: 20px;
@@ -28,8 +54,19 @@ footer {
 @media screen and (min-width: $medium) {
     footer {
         .social-media {
-            width: 15%;
+            width: 50%;
+        }
+    }
+    
+}
+
+
+@media screen and (min-width: $large) {
+    footer {
+        .social-media {
+            width: 25%;
             margin-left: auto;
+
             
         }
     }

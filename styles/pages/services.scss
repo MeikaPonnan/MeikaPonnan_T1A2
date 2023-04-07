@@ -3,9 +3,13 @@
 @import "../index";
 
 main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    h1 {
+        text-align: center;
+        color: $secondary-color;
+        text-transform: uppercase;
+
+    }
+ 
 
     article {
         border: 2px solid $border-color;
@@ -16,6 +20,9 @@ main {
         background-color: #31373c;
         padding: 20px;
         text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
 
 
 
@@ -40,8 +47,26 @@ main {
 
 @media screen and (min-width: $medium) {
     main {
+        width: 80%;
+        padding: 0px;
+        margin: 100px;
+    }
+
+}
+
+@media screen and (min-width: $large) {
+    main {
         display: flex;
+        justify-content: flex-start;
         flex-direction: row;
+        /* changes content direction to rows */
+
+
+        .headingh1{
+            display: flex;
+            align-self: center;
+        }
+
 
         article {
 
@@ -50,9 +75,5 @@ main {
                 color: $tertiary-color;
             }
         }
-        
-    
-     
-    }
-    
+    }   
 }

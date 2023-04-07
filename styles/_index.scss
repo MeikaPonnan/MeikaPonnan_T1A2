@@ -39,3 +39,34 @@ body {
         }
     }
 }
+
+@media screen and (min-width: $medium) {
+
+    body {
+
+        .content {
+            border: 1px solid $primary-background;
+            width: 75%;
+            padding: 10px;
+            margin: 100px;
+            font-size: 20px;
+        }
+
+        h1:hover {
+            transform: scale(1.2);
+            /* makes the text scale up in size */
+
+        }
+    }
+    
+}
+
+@media screen and (min-width: $large) {
+    
+    body {
+
+        .content {
+            width: 80%;
+        }
+    }
+}

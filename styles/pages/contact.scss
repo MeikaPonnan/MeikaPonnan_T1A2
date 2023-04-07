@@ -9,20 +9,19 @@ main {
     align-items: center;
 
     .contact-info {
-        color:$tertiary-color;
+        color:$secondary-color;
         text-align: center;
         font-size: 20px;
-        
-
     }
 
     h3 {
-        color: $primary-color;
+        color: $another-color;
     }
 
 
     h2 {
-        color: $primary-color;
+        color: $another-color;
+        text-align: center;
     }
 
     form {
@@ -63,7 +62,7 @@ main {
             #submit {
                 height: 30px;
                 min-width: 80px;
-                background-color: $primary-color;
+                background-color: $another-color;
                 color: $secondary-color;
                 border-radius: 25px;
                 border: $secondary-color;
@@ -89,15 +88,12 @@ main {
         form {
 
             .form-elements {
-                flex-direction: row;
-                justify-content: space-between;
+               
 
                 .form-input {
                     width: 400px;
                 }
             }
-
-
         }
         .button-form {
             margin: 10px 100px;
@@ -105,4 +101,31 @@ main {
         }
     }
     
+}
+
+@media screen and (min-width: $large) {
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 30px;
+        margin: 2px;
+     
+        form {
+
+            .form-elements {
+               
+
+                .form-input {
+                    width: 400px;
+                }
+            }
+        }
+        .button-form {
+            margin: 10px 100px;
+          
+        }
+    }
+
 }
